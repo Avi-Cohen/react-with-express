@@ -24,7 +24,7 @@ function App() {
         onChange={(e) => setValue(e.target.value)}
       />
       <button onClick={handleSubmit}>submit</button>
-      <button onClick={async()=> await axios.post('http://localhost:5000/avi', {name})}>click</button>
+      <button onClick={async()=> await axios.post('http://localhost:5000/shlomi', {name})}>click</button>
     </div>
   );
 }

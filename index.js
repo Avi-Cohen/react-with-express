@@ -20,9 +20,10 @@ app.post('/form', (req,res)=> {
     res.send(value)
     // add to db 
 })
-app.post('/avi', (req,res)=> {
-    console.log(req.body);
+app.post('/:name', (req,res)=> {
+    console.log('params: ' + req.params.name); // coming from url
     
+    console.log('body: ' + req.body.name);
     res.send(req.value)
     // add to db 
 })
